@@ -1,0 +1,84 @@
+
+body {
+  background-color: #A2C4BD;
+  font-family:"Arial", Times, serif; ;
+  color: #A2C4BD;
+  font-size: 24px;
+  line-height:20px;
+}
+
+h1, h2, h5{
+  color: #A2C4BD;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  /*font-size: 30px; */
+}
+p{
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+ font-size: 18px;
+ font-weight: lighter;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+a:hover{
+  color: #c1c9c7;
+}
+
+.container {
+  margin: 2% 20%;
+  background-color: #eff5f4;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.card{
+  padding: 20px;
+  width: 375px;
+  border: 1px dotted #A2C4BD;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.back-ground{
+  background-color: #A2C4BD;
+}
+
+div p { text-align: left; }
+
+.text-align {
+  align:center;
+}
+
+
+.box-schadow {
+  box-shadow: 2px 2px 3px #A2C4BD;
+}
+.img-round{ border-radius: 50%; }
+.img-borderradius{
+  border-radius: 5px;
+  border: 1px solid #A2C4BD;
+}
+
+.card ul{
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0px 2px 0px 0px;
+}
+
+.fab {
+  background-color:#A2C4BD;
+}
+
+td {
+  padding: 5px;
+
+}
+
+#page-portrait {
+  border-radius: 50%;
+}
