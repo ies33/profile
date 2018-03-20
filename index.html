@@ -6,48 +6,87 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <title>profile Iris Cedée</title>
+    <title> Iris Cedée on GitHub</title>
     <meta name="description" content="profiel Iris Cedee">
   </head>
 <body>
+<!-- sidenav javascript-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-angle-left"></i>
+  </a>
+  <!-- <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a> -->
+  <a href="#summary" title="about Iris"><i class="fas fa-info-circle"></i></a>
+  <a href="#projects" title="projects" ><i class="fas fa-lightbulb"></i></a>
+  <a href="#favorite-movies" title="favorite movies" ><i class="fas fa-film"></i></a>
+  <a href="#help" title="contact" ><i class="fas fa-question-circle"></i></a>
 
-<div id="sidebar">
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"><div style="color:white;font-size: 36px;"><i class="fas fa-angle-right"></i></div></span>
+<!-- sidenav javascript-->
+
+<!-- <div id="sidebar"><div style="color:white;"><i class="fas fa-angle-right"></i></div>
   <ul>
-    <li class="btn-mint"><a href="#summary" >
-      <i class="fas fa-info-circle"></i></a></li>
+    <li class="btn-mint"><a href="#summary" ><i class="fas fa-info-circle"></i></a></li>
     <li class="btn-mint"><a href="#favorite-movies" ><i class="fas fa-film"></i></a></li>
     <li class="btn-mint"><a href="#help" ><i class="fas fa-question-circle"></i></a></li>
   </ul>
-</div>
-<div id="page-content">
+</div> -->
 
+<div id="page-content">
   <div class="container">
   <div class="card text-align" id="summary">
     <img src="images/iris.png" id="page-portrait" class="img-borderradius box-shadow" width="300px">
     <h1>Iris Cedee</h1>
-    <h5>Programmer</h5>
-    <p>Doortastende Allround technisch Beeldredacteur met ruime ervaring in media productie. Kennis van Search Engine Optimization (SEO), Fotografie, Microsoft Excel, Databases en Beeldbanken. Bachelor of Arts - Kunst, Architectuur, Natuur en Landschap, Food & Lifestyle. </p>
+    <h5>Fullstack Webdeveloper</h5>
+    <p>I have a background in Picture-editing in 2018 I completed <a style="color:#A2C4BD;" href="http://www.lewagon.com">Le Wagon's</a> Fullstack webdeveloper bootcamp. <br /> Now I am improving my skills in Ruby, RubyonRails, ActionScript & JavaScript. <br />
+    Other Skills:  HTML/CSS, SEO, Photografie, Microsoft Excel, Databases and Image Libraries.<br /> Interests: Art, Architecture,Photography, Landscape-design,Nature, Food & Lifestyle. </p>
   </div>
-  <div class="card text-align back-ground" id="favorite-movies">
-    <li>
-      <ul>
-        <a href="https://nl-nl.facebook.com/iris.cedee" target="_blank">
-            <i class="fab fa-facebook"></i>
-        </a>
-      </ul>
-      <ul>
-        <a href="https://www.linkedin.com/in/iriscedee/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </ul>
-      <ul>
-        <a href="https://www.instagram.com/iriscedee/" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </ul>
-    </li>
+
+
+  <div class="card text-align" id="projects">
+    <div class="project">
+      <img src="images/farm-dining.png" alt="" >
+      <div class="infotext"><p>During the <em>Le Wagon</em> Bootcamp I have worked on the farm-dining RoR-project, with three other students for our final demo.
+       I have worked both on back-end and front-end.
+      </p>
+      </div>
+    </div>
+    <div class="project">
+       <img src="images/NeedleitH.png" alt="" >
+        <div class="infotext">
+          <p>During the <em>Le Wagon</em> Bootcamp I have worked on the Needle in the Haystack RoR-project, with three other students. I have worked both on back-end and front-end. I will continue working on this project.
+      </p>
+
+        </div>
+    </div>
+    <div class="project">
+      <img src="images/rosa.png" alt="" >
+      <div class="infotext">
+        <p>I have build the site for a young theater director.
+      </p>
+
+      </div>
+    </div>
+    <div class="project">
+       <img src="images/simone.png" alt="" >
+      <div class="infotext">
+        <p>I have build the site for a Dutch writer of Children's books.
+
+
+
+
+      </div>
+    </div>
+
+
+
   </div>
-  <div class="card text-align">
+  <div class="card text-align" id="favorite-movies">
     <table>
       <tr>
         <td><img src="images/amelie.jpg" alt="poster Amelie" width="150px" class="img-borderradius box-shadow"></td>
@@ -82,8 +121,43 @@
     </table>
   </div>
 </div>
+<div class="card text-align back-ground" id="contact">
+    <li>
+      <ul>
+        <a href="https://nl-nl.facebook.com/iris.cedee" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+      </ul>
+      <ul>
+        <a href="https://www.linkedin.com/in/iriscedee/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </ul>
+      <ul>
+        <a href="https://www.instagram.com/iriscedee/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </ul>
+       <ul>
+        <a href="mailto:iriscedee@gmail.com?SUBJECT=IrisOnGitHub" target="_top">
+          <i class="fas fa-at"></i>
+        </a>
+      </ul>
+    </li>
+  </div>
 
 </div> <!--!page-content-->
+<script>
+  /* Set the width of the side navigation to 100px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 
 
